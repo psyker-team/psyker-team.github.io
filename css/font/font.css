@@ -1,0 +1,17 @@
+@font-face {
+    /* 重命名字体名 */
+    font-family: 'Arial';
+    /* 引入字体 */
+    src: url('./arial.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    /* 重命名字体名 */
+    font-family: 'Akzidenz-Grotesk BQ Condensed';
+    /* 引入字体 */
+    src: url('./AkzidenzGrotesk-ExtraBoldCond.otf');
+    font-weight: normal;
+    font-style: normal;
+}

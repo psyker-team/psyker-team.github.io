@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>Project Mist</title>
+    <link rel="stylesheet" href="./css/font/font.css">
+    <link rel="stylesheet" href="./css/style.css?v=1.01">
+
+
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/fixedScroll.js"></script>
+    <script src="./js/fix.js"></script>
+</head>
+<body>
+     <div id="root">
+        <div class="header-top">
+           <div class="header-item content">
+                <div><img src="./image/logo.png" alt=""></div>
+                <div>
+                    <ul class="c_flex nav-item">
+                        <!-- Download   Community   Github   FAQ   Contact us   EN / 中 -->
+                        <li><a href="#Download">Download</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Github</a></li>
+                        <li><a href="#Faq">FAQ</a></li>
+                        <li><a href="#Contact">Contact us</a></li>
+                        <li><a target="_self" href="index_en.html">EN / 中</a></li>
+                    </ul>
+                </div>
+           </div>
+        </div>
+        <!-- Banner部分 -->
+        <div class="container-banner">
+            <div class="content banner-row">
+                <p><img src="./image/logo.png" alt=""></p>
+                <div class="desc">
+                    <p>An image preprocessing tool to protect </p>
+                    <p>artworks from AI-for-Art based mimicry</p>
+                </div>
+                <div>
+                    <a class="path-item" href="#">See the documentation for quick start</a>
+                </div>
+            </div>
+            <img class="bj_banner" src="./image/banner.png" alt="">
+     </div>
+        <!--  What is Mist -->
+        <div class="mist-content">
+            <div class="content">
+                <p class="content-title">What is Mist</p>
+                <div class="content-desc">
+Mist is an image preprocessing tool for the purpose of protecting the style/content of the images from being mimicked by state-of-the-art AI-for-Art applications, including Stable Diffusion, Novel.ai, and scenario.gg. Mist does this by adding human-invisible watermarks to images thus making them unrecognizable for the model used by AI-for-Art applications. Concretely speaking, if AI-for-Art applications try to mimic these Misted images, the output image of such mimicry will be a mess.
+    </div>
+
+
+            
+                <!-- 中间箭头内容区 -->
+                <div class="c_flex arrow_content">
+                    <div class="arrow_item_img">
+                        <img src="./image/source/source_vangogh.png" alt="">
+                    </div>
+                    <div class="arrow-item">
+                        <p><b>Mist</b></p>
+                        <p><img class="right_arrow" src="./image/right_arrow.png" alt=""></p>
+                    </div>
+                    <div class="arrow_item_img">
+                        <img src="./image/source/mist_vangogh.png" alt="">
+                    </div>
+   
+                    <div class="arrow-item">
+     
+                        <p> <b>Mimic</b></p>
+                     
+                        <p><img class="right_arrow" src="./image/right_arrow.png" alt=""></p>
+                         </div>
+
+                    <div class="arrow_item_img">
+                        <img src="./image/ti/mist/3.png" alt="">
+                    </div>
+                </div>
+                <!--  -->
+                <div class="content-desc">
+We would like to maintain Mist in a long term and continuously update its function. To this end, we have open-sourced Mist on Github and hope to build a community for developers and users on Discord to further improve the performance of Mist. Both user response and technical engagement are welcome. Join us now!
+                </div>
+                <div class="c_center">
+                    <a class="path-item" href="#">Join our community in Discord</a>
+                </div>
+            </div>
+
+            <!-- Advantages -->
+            <div class="content">
+                <p class="content-title">Advantages & Examples</p>
+                <div class="content-desc">
+                Mist is strong against various AI-for-Art applications, robust to noise purification, and time-efficient. Examples are given to prove that Mist provides state-of-the-art protecting watermarks for images with robustness to noise purification. Furthermore, the watermarking process costs only several minutes! 
+                </div>
+                <!-- 主内容区 -->
+                <div>
+                  <p class="sub-content-title">Effectiveness <span class="operation"> <i class="up_active"></i> <b>close</b></span></p>
+             <div class="content-desc">
+                Mist is effective against various AI-for-Art applications, including textual inversion (implemented in <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui" target="_blank" title="click to navigate to stable-diffusion-webui">stable-diffusion-webui</a>), dreambooth (implemented in <a href="https://huggingface.co/docs/diffusers/training/dreambooth" target="_blank" title="click to navigate to diffuser">diffuser</a>), <a href="https://app.scenario.gg" target="_blank" title="click to navigate to scenario.gg">Scenario.gg</a>, and <a href="https://novelai.net/" target="_blank" title="click to navigate to NovelAI">NovelAI</a>. 
+                </div>
+                <div class='effect-show'>
+                  <p class="effect-content-title">Textual Inversion </p>
+                  <div class="advantages_row" id="advantages_row_first">
+
+                    <div>
+                      <p><img src="./image/source/source_vangogh.png" alt=""></p>
+                      <p>Source image</p>
+                    </div>
+                    <div>
+                      <p><img src="./image/ti/clean/3.png" alt=""></p>
+                      <p>Image generation from source image</p>
+                    </div>
+                    <div>
+                      <p><img src="./image/source/mist_vangogh.png" alt=""></p>
+                      <p>Misted image</p>
+                    </div>
+
+                    <div>
+                      <p><img src="./image/ti/mist/3.png" alt=""></p>
+                      <p>Image generation from misted image</p>
+                    </div>
+                  </div>
+                  </div>
+
+                <div class='effect-show'>
+                  <p class="effect-content-title">Dreambooth</p>
+                  <div class="advantages_row" id="advantages_row_first">
+
+                    <div>
+                      <p><img src="./image/source/source_vangogh.png" alt=""></p>
+                      <p>Source image</p>
+                    </div>
+                 <div>
+                      <p><img src="./image/db/clean/10.png" alt=""></p>
+                      <p>Image generation from source image</p>
+                    </div>
+                    <div>
+                      <p><img src="./image/source/mist_vangogh.png" alt=""></p>
+                      <p>Misted image</p>
+                    </div>
+   
+                    <div>
+                      <p><img src="./image/db/mist/5.png" alt=""></p>
+                      <p>Image generation from misted image</p>
+                    </div>
+                  </div>
+                  </div>
+
+                <div class='effect-show'>
+                  <p class="effect-content-title">Scenario.gg </p>
+                  <div class="advantages_row" id="advantages_row_first">
+
+                    <div>
+                      <p><img src="./image/source/source_vangogh.png" alt=""></p>
+                      <p>Source image</p>
+                    </div>
+                <div>
+                      <p><img src="./image/scenario/clean/3.png" alt=""></p>
+                      <p>Image generation from source image</p>
+                    </div>
+                    <div>
+                      <p><img src="./image/source/mist_vangogh.png" alt=""></p>
+                      <p>Misted image</p>
+                    </div>
+    
+                    <div>
+                      <p><img src="./image/scenario/mist/3.png" alt=""></p>
+                      <p>Image generation from misted image</p>
+                    </div>
+                  </div>
+                  </div>
+
+                <div class='effect-show'>
+                  <p class="effect-content-title">NovelAI image2image </p>
+                  <div class="advantages_row" id="advantages_row_first">
+
+                    <div>
+                      <p><img src="./image/source/sample_512.png" alt=""></p>
+                      <p>Source image</p>
+                    </div>
+                    <div>
+                      <p><img src="./image/novelai/clean/0.5_0.2.png" alt=""></p>
+                      <p>Image generation from source image</p>
+                    </div>
+                    <div>
+                      <p><img src="./image/source/misted_sample_16_100_512_1_2_1.png" alt=""></p>
+                      <p>Misted image</p>
+                    </div>
+
+                    <div>
+                      <p><img src="./image/novelai/mist/0.5_0.2.png" alt=""></p>
+                      <p>Image generation from misted image</p>
+                    </div>
+                  </div>
+                  </div>
+
+
+                </div>
+                <div class="c_center line_cent"><p class="line"></p></div>
+                <!-- 主内容区二 -->
+                <div>
+                  <p class="sub-content-title">Robustness under image transformation <span class="operation"> <i class="up_active"></i> <b>close</b>
+                  <div class="content-desc">
+                Mist is robust to image transformation.  We compare the performance of Gaussian noise, <a href="glaze.cs.uchicago.edui" target="_blank" title="click to navigate to glaze"> glaze</a> (with very high intensity and medium render quality) and mist after  cropping  and resizing. Mist is the only method remains effective after input transformation.
+                 
+                </div>
+                  </span></p>
+                        <div class='effect-show'>
+                  <p class="effect-content-title">Textual Inversion </p>          
+                  <div class="advantages_row " id="advantages_row_first">
+                    <div>
+                      <p><img src="./image/ti/clean/1.png" alt=""></p>
+                      <p>Image generation from source image</p>
+                    </div>
+                    <div>
+                      <p><img src="./image/ti/gaussian.png" alt=""></p>
+                      <p>Image generation from gaussian-perturbed image</p>
+                    </div>
+                    <div>
+                      <p><img src="./image/ti/glaze-crop/1.png" alt=""></p>
+                      <p>Image generation from glazed image</p>
+                    </div>
+
+                    <div>
+                      <p><img src="./image//ti/mist-crop/1.png" alt=""></p>
+                      <p>Image generation from mist image</p>
+                    </div>
+                    </div>
+                      </div>
+                       <div class='effect-show'>
+                  <p class="effect-content-title">Dreambooth </p>          
+                  <div class="advantages_row " id="advantages_row_first">
+                    <div>
+                      <p><img src="./image/db/clean/4.png" alt=""></p>
+                      <p>Image generation from source image</p>
+                    </div>
+                    <div>
+                      <p><img src="./image/db/gaussian.png" alt=""></p>
+                      <p>Image generation from gaussian-perturbed image</p>
+                    </div>
+                    <div>
+                      <p><img src="./image/db/glaze-crop/0.png" alt=""></p>
+                      <p>Image generation from glazed image</p>
+                    </div>
+     
+                    <div>
+                      <p><img src="./image/db/mist-crop/0.png" alt=""></p>
+                      <p>Image generation from mist image</p>
+                    </div>
+                    </div>
+                  </div>
+                  </div>
+                <div class="c_center line_cent"><p class="line"></p></div>
+                <!-- 主内容区三 -->
+                <div>
+                  <p class="sub-content-title">Fast speed <span class="operation"> <i class="up_active"></i> <b>close</b></span></p>
+
+                    <div class="third_content">
+                      <div>
+                      <p><img src="./image/db/mist-crop/0.png" alt=""></p>
+                      <p>inference speed of Mist</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end -->
+        </div>
+        <!-- Download -->
+        <div class="download-content box" id="Download">
+          <div class="content">
+            <p class="content-title">Download</p>
+            <div class="content-desc">
+ Mist can be downloaded by two approaches. For users, you can download the file from Huggingface. After unzipping the file, Mist can be boosted by clicking on the executable file Mist. In another case, if you are a developer and want to build Mist from scratch, you may download the source code of Mist from Github and check the Readme file for installation. Currently, Mist supports Linux and Windows.
+            </div>
+            <div class="down-operation">
+              <a class="path-item" href="#">Linux</a>
+              <a class="path-item" href="#">Windows</a>
+              <a class="path-item" href="#">Source Code</a>
+            </div>
+          </div>  
+        </div>
+        <!-- Validate -->
+        <div class="download-content box odd-bj">
+          <div class="content">
+            <p class="content-title">Validate</p>
+            <div class="content-desc">
+Mist works on preventing AI-for-Art applications to mimic the style/content of the image. Users can validate the effectiveness of Mist in two steps. First, add watermarks to images with Mist, Second, feed these images to AI-for-Art applications and synthesize new images based on their mimicry functions, for example, textual inversion and Dreambooth. We provide guidelines for such validation in our documentation. 
+            </div>
+            <div class="c_center">
+              <a class="path-item" href="#">See documentation for detailed guidelines
+              </a>
+             
+            </div>
+          </div>  
+        </div>
+         <!-- FAQ -->
+         <div class="download-content box" id="Faq">
+          <div class="content">
+            <!-- <p class="content-title">FAQ</p><span class="operation"> <i class="up_active"></i> <b>close</b></span></p> -->
+            <p class="sub-content-title", id="sub-content-title-bigger" >FAQ <span class="operation"> <i class="up_active"></i> <b>close</b></span></p>
+            <div class="content-desc" id='faq-content'>
+              <div>
+                <b>Q: </b>What is the computing resource requirement to run Mist?
+              </div>
+              <div>
+                  <b>A: </b>We provide a table in our documentation about the device requirement. Also, we strongly recommend users who lack computing resources to use the low VRAM mode of Mist. This would greatly reduce the computing resource requirement. 
+              </div>
+  
+              <div>
+                <b>Q: </b> Would Mist protect the image absolutely?
+              </div>
+              <div>
+               <b>A: </b> No. We have validated the performance of Mist on Stable Diffusion, Novel.ai, and scenario.gg, which cover the mainstream AI-for-Art applications that support the mimicry function. However, even the most popular operating system is not absolutely safe. For us, new challenges may be originated from newly released AI-for-Art applications, novel mimicry functions supported, or newly proposed methods to purify our watermarks. What we can do is continuously listening to our users who would find bugs in the system and fixing them accordingly. That's why we build a Discord for both developers and users for the response. Join us now!
+              </div>
+              <div>
+                <b>Q: </b>What should I do if my device cannot run Mist even under low VRAM mode?
+              </div>
+              <div>
+               <b>A: </b> We feel sorry for the limitation and would like to share that we are going to push Mist as an open-source serverless online service, which will allow all users to use Mist, even if they do not have a computer. Please wait for us for a while!  
+                -If I use an attack whose strength is smaller than recommended to make the watermark not so obvious, would Mist still work?
+                -Of course. The recommended strength is to promise an overall performance under different mimicry cases (e. g. Textual inversion and Dreambooth in Stable Diffusion, Img2Img in Novel.ai, etc). While reducing the strength, Mist will still work with relatively moderate performance. Moreover, if the user only cares about some of the mimicry cases, he or she can choose a mode in Mist that will specifically work on those cases and reduce the watermark strength to better demonstrate the image. For the question of how to choose the mode, we give detailed instructions in our documentation.
+
+            </div>
+            </div>  
+        </div>
+        <!-- Contact us  -->
+        <div class="download-content box odd-bj" id="Contact">
+          <div class="content">
+            <p class="content-title">Contact us </p>
+            <div class="contact_item c_flex">
+                <div>
+   As mentioned, we hope all our users and developer interested in Mist join our Discord so that we can learn from their response and advices and create a better Mist. We are always on Discord to answer problems about Mist. This is the best way to contact us. Furthermore, you can contact us by sending an E-mail to our Gmail: caradryan2022@gmail.com.
+                </div>
+                <div>
+  
+
+Our group:
+<P>(Alphabetical order by last name)</P>
+<P>Chumeng (Caradryan) Liang. Prospect Ph.D. student in CS, USC.</P>
+<P>Xiaoyu Wu. First-year Master's student in CS, Shanghai Jiao Tong University.</P>
+<P>Yiming (Chris) Xue. L.L.M. candidate, NYU.</P>
+
+                </div>
+            </div>
+          </div>  
+        </div>
+     </div>
+     <script>
+       $('body .operation').on('click',function(){
+        var thisTxt = $(this).find('b');
+        if(thisTxt.text() == 'close'){
+          $(this).find('b').text('open');
+          $(this).find('i').removeClass('up_active').addClass('is_active');
+
+
+          $(this).parent().parent().find('.content-desc').animate({ height: 'hide', opacity: 'hide' }, 'slow');
+          $(this).parent().parent().find('.advantages_row').animate({ height: 'hide', opacity: 'hide' }, 'slow');
+           $(this).parent().parent().find('.effect-content-title').animate({ height: 'hide', opacity: 'hide' }, 'medium');
+                     $(this).parent().parent().find('.third_content').animate({ height: 'hide', opacity: 'hide' }, 'slow');
+        }else{
+          $(this).find('b').text('close');
+          $(this).find('i').removeClass('is_active').addClass('up_active');
+
+          $(this).parent().parent().find('.content-desc').animate({ height: 'show', opacity: 'show' }, 'slow');
+          $(this).parent().parent().find('.effect-content-title').animate({ height: 'show', opacity: 'show' }, 'slow');
+          $(this).parent().parent().find('.advantages_row').animate({ height: 'show', opacity: 'show' }, 'slow');
+          $(this).parent().parent().find('.third_content').animate({ height: 'show', opacity: 'show' }, 'slow');
+        }
+        
+       })
+       
+        // HREF LINKS
+        $('a[href*="#"]').click(function (event) {
+        if (
+            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: target.offset().top - 74
+            }, 1000);
+            }
+        }
+        });
+     </script>
+</body>
+</html>
