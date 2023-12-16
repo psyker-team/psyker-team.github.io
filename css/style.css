@@ -358,6 +358,22 @@ body {
   /*    font-family: 'Open Sans', sans-serif;*/
   color: #777777;
 }
+
+.content-desc-chinese-indent {
+  /* width: 80%;
+    margin-left: 10%; */
+  /*    font-size: 28px;
+    line-height: 38px;*/
+  /*    font-size: 26px;
+    line-height: 41px;*/
+  font-size: 24px;
+  line-height: 40px;
+  text-indent: 48px;
+  font-family: \5FAE\8F6F\96C5\9ED;
+  /*    font-family: 'Open Sans', sans-serif;*/
+  color: #777777;
+}
+
 /* 操作按钮 */
 .path-item {
   width: 470px;

@@ -74,7 +74,7 @@
         </div>
         <div>
           <a class="path-item-chinese"
-            href="https://mist-documentation.readthedocs.io/zh_CN/latest/content/quickstart.html">快速开始指南</a>
+            href="https://github.com/mist-project/mist-v2-documentation-cn">快速开始指南</a>
         </div>
       </div>
       <!-- <div align='center'>
@@ -88,19 +88,21 @@
       <p class="content-title">Mist是什么</p>
       <div class="content-desc-chinese">
         Mist是一项图像预处理工具，旨在保护图像的风格和内容不被最先进的AI-for-Art应用程序（如Stable
-        Diffusion、NovelAI和scenario.gg）模仿。通过在图像上添加水印，Mist使AI-for-Art应用程序无法识别并模仿这些图像。如果AI-for-Art应用程序尝试模仿这些经Mist处理过的图像，所输出的图像将被扰乱，且无法作为艺术作品使用。
+        Diffusion上的LoRA，SDEdit，Textual Inversion和 DreamBooth功能和Scenario.gg等）模仿。通过在图像上添加水印，Mist使AI-for-Art应用程序无法识别并模仿这些图像。如果AI-for-Art应用程序尝试模仿这些经Mist处理过的图像，所输出的图像将被扰乱，且无法作为艺术作品使用。
       </div>
       <!-- 中间箭头内容区 -->
       <div class="c_flex arrow_content">
         <div class="arrow_item_img">
-          <img src="./image/source/source_vangogh.png" alt="">
+          <!-- <img src="./image/source/source_vangogh.png" alt=""> -->
+          <img src="./image/mist_v2/clean.png" alt="">
         </div>
         <div class="arrow-item">
           <p><b>Mist</b></p>
           <p><img class="right_arrow" src="./image/right_arrow.png" alt=""></p>
         </div>
         <div class="arrow_item_img">
-          <img src="./image/source/mist_vangogh.png" alt="">
+          <!-- <img src="./image/source/mist_vangogh.png" alt=""> -->
+          <img src="./image/mist_v2/adv.png" alt="">
         </div>
 
         <div class="arrow-item">
@@ -111,7 +113,8 @@
         </div>
 
         <div class="arrow_item_img">
-          <img src="./image/ti/mist/3.png" alt="">
+          <!-- <img src="./image/ti/mist/3.png" alt=""> -->
+          <img src="./image/mist_v2/gen_adv.jpg" alt="">
         </div>
       </div>
       <!--  -->
@@ -126,8 +129,17 @@
       <br>
       <br>
             <div class="content-desc">
-       最新消息：Mist 也被机器学习顶会 <b> ICML 2023 作为口头报告接收 </b>! 更多详细信息可以参考我们的 <a
-                  href="https://arxiv.org/abs/2302.04578" target="_blank" title="click to navigate to our paper"> 论文</a>. 
+              <b>最新消息：</b>
+              <br>
+              <div class="content-desc-chinese">
+                【2023.12】  Mist V2正式发布，是目前<b>第一个在LoRA下系统性验证有效</b>的图像预处理工具。此外，Mist V2大幅优化了性能，在对抗各种AI-for-Art应用具有更强大效果的同时降低了计算资源开销。更多详细信息可以参考我们的<a
+                            href="https://arxiv.org/abs/2310.04687" target="_blank" title="click to navigate to our paper for Mist V2"> 论文</a>。
+                          </div>
+              <div class="content-desc-chinese">
+      【2023.04】  Mist 也被机器学习顶会 <b> ICML 2023 作为口头报告接收 </b>! 更多详细信息可以参考我们的 <a
+                  href="https://arxiv.org/abs/2302.04578" target="_blank" title="click to navigate to our paper"> 论文</a>。
+                </div>
+
       </div>
       <br>
       <br>
@@ -140,69 +152,81 @@
       <div class="container">
         <p class="content-title">优势与实例</p>
         <div class="content-desc-chinese">
-          Mist在对抗各种AI-for-Art应用程序方面具有强大的功能，对噪声净化具有很高的鲁棒性，且耗时更短。以下示例表明，Mist为图像提供了最先进的保护水印，能够有效抵抗各种噪声净化的方法，如截屏、裁剪和调整尺寸。此外，Mist为图像添加水印的过程仅需几分钟即可实现。
+          Mist在对抗各种AI-for-Art应用程序方面具有强大的功能，对噪声净化具有很高的鲁棒性，且耗时更短，计算资源开销更少。以下示例表明，Mist为图像提供了最先进的保护水印，能够有效抵抗各种噪声净化的方法，如裁剪和调整尺寸或者超分。此外，Mist为图像添加水印的过程仅需几分钟即可实现。
         </div>
         <!-- 主内容区 -->
         <div>
           <p class="sub-content-title">更有效 <span class="operation"> <i class="up_active"></i> <b>close</b></span></p>
           <div class="content-desc-chinese">
-            Mist应对各种AI-for-Art 的应用均有效，包括textual inversion(在<a
+            <!-- Mist应对各种AI-for-Art 的应用均有效，包括textual inversion(在<a
               href="https://github.com/AUTOMATIC1111/stable-diffusion-webui" target="_blank"
               title="click to navigate to stable-diffusion-webui">stable-diffusion-webui</a>部署)，dreambooth (在 <a
               href="https://huggingface.co/docs/diffusers/training/dreambooth" target="_blank"
               title="click to navigate to diffuser">diffuser</a>部署), <a href="https://app.scenario.gg" target="_blank"
               title="click to navigate to scenario.gg">Scenario.gg</a>, and <a href="https://novelai.net/"
-              target="_blank" title="click to navigate to NovelAI">NovelAI</a>.
+              target="_blank" title="click to navigate to NovelAI">NovelAI</a>. -->
+              Mist应对各种AI-for-Art的应用均有效，包括LoRA（在<a
+              href="https://huggingface.co/docs/diffusers/training" target="_blank"
+              title="click to navigate to diffuser">Diffusers</a>部署，是目前最常用的绘画风格学习工具），SDEdit（在<a
+              href="https://github.com/AUTOMATIC1111/stable-diffusion-webui" target="_blank"
+              title="click to navigate to stable-diffusion-webui">stable-diffusion-webui</a>部署，是目前最常用的图像修改工具），textual inversion（在<a
+              href="https://github.com/AUTOMATIC1111/stable-diffusion-webui" target="_blank"
+              title="click to navigate to stable-diffusion-webui">stable-diffusion-webui</a>部署），DreamBooth （在 <a
+              href="https://huggingface.co/docs/diffusers/training/dreambooth" target="_blank"
+              title="click to navigate to diffuser">Diffusers</a>部署），<a href="https://app.scenario.gg" target="_blank"
+              title="click to navigate to scenario.gg">Scenario.gg</a>等。
+              <br>
+              以最典型的两个应用：LoRA和SDEdit为例，Mist添加的水印均对生成结果形成了极大干扰。
           </div>
           <div class='effect-show'>
-            <p class="effect-content-title">Textual Inversion </p>
+            <p class="effect-content-title">LoRA </p>
             <div class="advantages_row" id="advantages_row_first">
 
               <div class="">
-                <p><img src="./image/source/source_vangogh.png" alt=""></p>
+                <p><img src="./image/mist_v2/ori_sample.png" alt=""></p>
                 <p>原始图像</p>
               </div>
               <div>
-                <p><img src="./image/ti/clean/3.png" alt=""></p>
+                <p><img src="./image/mist_v2/clean_t2i.jpg" alt=""></p>
                 <p>原始图像对应的生成图</p>
               </div>
               <div>
-                <p><img src="./image/source/mist_vangogh.png" alt=""></p>
+                <p><img src="./image/mist_v2/mist_4.png" alt=""></p>
                 <p>Mist处理后的图像</p>
               </div>
 
               <div>
-                <p><img src="./image/ti/mist/3.png" alt=""></p>
+                <p><img src="./image/mist_v2/misted_t2i.jpg" alt=""></p>
                 <p>Mist处理后图像的生成图</p>
               </div>
             </div>
           </div>
 
           <div class='effect-show'>
-            <p class="effect-content-title">Dreambooth</p>
+            <p class="effect-content-title">SDEdit</p>
             <div class="advantages_row" id="advantages_row_first">
 
               <div>
-                <p><img src="./image/source/source_vangogh.png" alt=""></p>
+                <p><img src="./image/mist_v2/ori_sample_2.png" alt=""></p>
                 <p>原始图像</p>
               </div>
               <div>
-                <p><img src="./image/db/clean/10.png" alt=""></p>
+                <p><img src="./image/mist_v2/clean_i2i.jpg" alt=""></p>
                 <p>原始图像对应的生成图</p>
               </div>
               <div>
-                <p><img src="./image/source/mist_vangogh.png" alt=""></p>
+                <p><img src="./image/mist_v2/mist_4_2.png" alt=""></p>
                 <p>Mist处理后的图像</p>
               </div>
 
               <div>
-                <p><img src="./image/db/mist/5.png" alt=""></p>
+                <p><img src="./image/mist_v2/misted_i2i.jpg" alt=""></p>
                 <p>Mist处理后图像的生成图</p>
               </div>
             </div>
           </div>
 
-          <div class='effect-show'>
+          <!-- <div class='effect-show'>
             <p class="effect-content-title">Scenario.gg </p>
             <div class="advantages_row" id="advantages_row_first">
 
@@ -248,7 +272,7 @@
                 <p>Mist处理后图像的生成图</p>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="c_center line_cent">
           <p class="line"></p>
@@ -257,91 +281,195 @@
         <div>
           <p class="sub-content-title">更具鲁棒性 <span class="operation"> <i class="up_active"></i> <b>close</b>
               <div class="content-desc-chinese">
-                Mist 对常见的图像变化具有鲁棒性。 我们比较了高斯噪声， <a href="https://glaze.cs.uchicago.edu" target="_blank"
-                  title="click to navigate to glaze"> Glaze</a> (强度为最高，渲染质量为中等)
-                和Mist应对截图和拉伸后的防御效果。我们发现Mist是唯一一个应对图像变换后仍然鲁棒的方法。
-
+                Mist 对常见的图像变化具有鲁棒性。 我们比较了Mist在应对高斯噪声，JPEG压缩，截图和拉伸与超分等不同防御下的效果，可以观察到Mist在图像变化下仍然保持着较高的性能。
               </div>
             </span></p>
+  
+
           <div class='effect-show'>
-            <p class="effect-content-title">Textual Inversion </p>
-            <div class="advantages_row" id="advantages_row_first">
+            <p class="effect-content-title">LoRA </p>
+            <div class="advantages_row " id="advantages_row_first">
+
               <div>
-                <p><img src="./image/ti/clean/1.png" alt=""></p>
-                <p>原始图像对应的生成图</p>
+                <p><img src="./image/mist_v2/gaussian_t2i.jpg" alt=""></p>
+                <p>Mist应对高斯噪声下的生成图</p>
               </div>
               <div>
-                <p><img src="./image/ti/gaussian.png" alt=""></p>
-                <p>高斯噪声处理后图像的生成图</p>
-              </div>
-              <div>
-                <p><img src="./image/ti/glaze-crop/1.png" alt=""></p>
-                <p>Glaze处理后图像的生成图</p>
+                <p><img src="./image/mist_v2/jpeg_t2i.jpg" alt=""></p>
+                <p>Mist应对JPEG压缩下的生成图</p>
               </div>
 
               <div>
-                <p><img src="./image//ti/mist-crop/1.png" alt=""></p>
-                <p>Mist处理后图像的生成图</p>
+                <p><img src="./image/mist_v2/resize_t2i.jpg" alt=""></p>
+                <p>Mist应对截图和拉伸下的生成图</p>
+              </div>
+              <div>
+                <p><img src="./image/mist_v2/sr_t2i.jpg" alt=""></p>
+                <p>Mist应对超分下的生成图</p>
               </div>
             </div>
           </div>
           <div class='effect-show'>
-            <p class="effect-content-title">Dreambooth </p>
-            <div class="advantages_row" id="advantages_row_first">
+            <p class="effect-content-title">SDEdit </p>
+            <div class="advantages_row " id="advantages_row_first">
               <div>
-                <p><img src="./image/db/clean/4.png" alt=""></p>
-                <p>原始图像对应的生成图</p>
+                <p><img src="./image/mist_v2/gaussian_i2i.jpg" alt=""></p>
+                <p>Mist应对高斯噪声下的生成图</p>
               </div>
               <div>
-                <p><img src="./image/db/gaussian.png" alt=""></p>
-                <p>高斯噪声处理后图像的生成图</p>
-              </div>
-              <div>
-                <p><img src="./image/db/glaze-crop/0.png" alt=""></p>
-                <p>Glaze处理后图像的生成图</p>
+                <p><img src="./image/mist_v2/jpeg_i2i.jpg" alt=""></p>
+                <p>Mist应对JPEG压缩下的生成图</p>
               </div>
 
               <div>
-                <p><img src="./image/db/mist-crop/0.png" alt=""></p>
-                <p>Mist处理后图像的生成图</p>
+                <p><img src="./image/mist_v2/resize_i2i.jpg" alt=""></p>
+                <p>Mist应对截图和拉伸下的生成图</p>
+              </div>
+              <div>
+                <p><img src="./image/mist_v2/sr_i2i.jpg" alt=""></p>
+                <p>Mist应对超分下的生成图</p>
               </div>
             </div>
+          </div>
+
+          <div class="c_center line_cent">
+            <p class="line"></p>
+          </div>
+        </div>
+        <!-- end -->
+        <div>
+          <p class="sub-content-title">计算资源开销 <span class="operation"> <i class="up_active"></i> <b>close</b></span></p>
+          <div class="content-desc-chinese">
+            Mist支持CPU和GPU。使用CPU为单张图片添加Mist水印开销大概在1个小时，使用GPU可以在仅需占用6G显存的情况下运行Mist，且平均仅需5分钟就可以完成对于一张图像的处理。
           </div>
           <div class="c_center line_cent">
             <p class="line"></p>
           </div>
-          <!-- 主内容区三 -->
-          <div>
-            <p class="sub-content-title">更短耗时 <span class="operation"> <i class="up_active"></i> <b>close</b></span></p>
-            <div class="content-desc-chinese">
-              Mist的处理速度快，在默认参数下（步长为100，输出尺寸为512时）， Mist 可以在三分钟内处理完一张图。
+          <!-- <div class="third_content">
+            <div>
+              <p><img src="./image/speed.gif" alt=""></p>
+              <p>示例: Mist在三分钟内对莫奈的画作添加水印。(GPU: RTX A4000)</p>
             </div>
-            <div class="third_content">
+          </div> -->
+        </div>
+        <div>
+          <p class="sub-content-title">用户实例 <span class="operation"> <i class="up_active"></i> <b>close</b>
+              <div class="content-desc-chinese">
+                以下是部分画师作品在Mist保护下的效果。
+              </div>
+            </span></p>
+            <div class='effect-show'>
+              <p class="effect-content-title">@桑德兰的等待 </p>
+              <div class="advantages_row" id="advantages_row_first">
+                <div class="">
+                  <p><img src="./image/user2/ori_sample.png" alt=""></p>
+                  <p>原始图像</p>
+                </div>
+                <div>
+                  <p><img src="./image/user2/clean_t2i.jpg" alt=""></p>
+                  <p>原始图像对应的生成图</p>
+                </div>
+                <div>
+                  <p><img src="./image/user2/mist_4.png" alt=""></p>
+                  <p>Mist处理后的图像</p>
+                </div>
+  
+                <div>
+                  <p><img src="./image/user2/misted_t2i.jpg" alt=""></p>
+                  <p>Mist处理后图像的生成图</p>
+                </div>
+              </div>
+              <div class="advantages_row" id="advantages_row_first">
+                <div class="">
+                  <p><img src="./image/user2_2/ori_sample.png" alt=""></p>
+                  <p>原始图像</p>
+                </div>
+                <div>
+                  <p><img src="./image/user2_2/clean_t2i.jpg" alt=""></p>
+                  <p>原始图像对应的生成图</p>
+                </div>
+                <div>
+                  <p><img src="./image/user2_2/mist_4.png" alt=""></p>
+                  <p>Mist处理后的图像</p>
+                </div>
+  
+                <div>
+                  <p><img src="./image/user2_2/misted_t2i.jpg" alt=""></p>
+                  <p>Mist处理后图像的生成图</p>
+                </div>
+              </div>
+            </div>
+          <div class='effect-show'>
+            <p class="effect-content-title">@匿名画师 </p>
+            <div class="advantages_row" id="advantages_row_first">
+              <div class="">
+                <p><img src="./image/user1/ori_sample.png" alt=""></p>
+                <p>原始图像</p>
+              </div>
               <div>
-                <p><img src="./image/speed.gif" alt=""></p>
-                <p>示例: Mist在三分钟内对莫奈的画作添加水印。(GPU: RTX A4000)</p>
+                <p><img src="./image/user1/clean_t2i.jpg" alt=""></p>
+                <p>原始图像对应的生成图</p>
+              </div>
+              <div>
+                <p><img src="./image/user1/mist_4.png" alt=""></p>
+                <p>Mist处理后的图像</p>
+              </div>
+
+              <div>
+                <p><img src="./image/user1/misted_t2i.jpg" alt=""></p>
+                <p>Mist处理后图像的生成图</p>
+              </div>
+            </div>
+            <div class="advantages_row" id="advantages_row_first">
+              <div class="">
+                <p><img src="./image/user1_2/ori_sample.png" alt=""></p>
+                <p>原始图像</p>
+              </div>
+              <div>
+                <p><img src="./image/user1_2/clean_t2i.jpg" alt=""></p>
+                <p>原始图像对应的生成图</p>
+              </div>
+              <div>
+                <p><img src="./image/user1_2/mist_4.png" alt=""></p>
+                <p>Mist处理后的图像</p>
+              </div>
+
+              <div>
+                <p><img src="./image/user1_2/misted_t2i.jpg" alt=""></p>
+                <p>Mist处理后图像的生成图</p>
               </div>
             </div>
           </div>
+
+          <!-- <div class="c_center line_cent">
+            <p class="line"></p>
+          </div> -->
+          <!-- 主内容区三 -->
+
         </div>
-        <!-- end -->
       </div>
+    </div>
       <!-- Download -->
       <div class="download-content box" id="Download">
         <div class="container">
           <p class="content-title">下载</p>
           <div class="content-desc-chinese">
-            Mist可以通过两种方式下载。一般用户可通过Huggingface下载文件，于解压文件后通过点击可执行文件“Mist”启动。有兴趣通过开源代码搭建Mist或研究其他技术细节的开发者可通过GitHub下载源代码，并参考Readme文件进行安装。目前，Mist兼容Linux和Windows操作系统。
+            <!-- Mist兼容Linux和Windows操作系统。用户可以通过下方谷歌网盘或百度网盘链接（提取码：m4nx）下载。有兴趣通过开源代码搭建Mist或研究其他技术细节的开发者可通过GitHub下载源代码，并参考Readme文件进行安装。 -->
+            Mist兼容Linux和Windows操作系统。Windows用户可以通过下方谷歌网盘或百度网盘链接（提取码：m4nx）下载Mist启动器并安装运行。Linux用户推荐使用我们在GitHub上开源的代码获取Mist，并参考Readme文件进行安装与使用。
+            <!-- Mist可以通过两种方式下载。一般用户可通过Huggingface下载文件，于解压文件后通过点击可执行文件“Mist”启动。有兴趣通过开源代码搭建Mist或研究其他技术细节的开发者可通过GitHub下载源代码，并参考Readme文件进行安装。目前，Mist兼容Linux和Windows操作系统。 -->
           </div>
           <div class="down-operation">
-            <a class="path-item-chinese" href="https://huggingface.co/mist-project/mist-linux/tree/main">Linux</a>
+            <!-- <a class="path-item-chinese" href="https://huggingface.co/mist-project/mist-linux/tree/main">Linux</a>
             <a class="path-item-chinese" href="https://huggingface.co/mist-project/mist-win/tree/main">Windows</a>
-            <a class="path-item-chinese" href="https://github.com/mist-project/mist">源代码</a>
+            <a class="path-item-chinese" href="https://github.com/mist-project/mist">源代码</a> -->
+            <a class="path-item-chinese" href="https://drive.google.com/drive/folders/1vg8oK2BUOla5adaJcFYx5QMq0-MoP8kk?usp=drive_link">谷歌网盘</a>
+            <a class="path-item-chinese" href="https://pan.baidu.com/s/1fZP4nFxlmmr0DiE54DJ7HQ">百度网盘</a>
+            <a class="path-item-chinese" href="https://github.com/mist-project/mist-v2">GitHub</a>
           </div>
         </div>
       </div>
       <!-- Validate -->
-      <div class="download-content box odd-bj">
+      <!-- <div class="download-content box odd-bj">
         <div class="container">
           <p class="content-title">验证</p>
           <div class="content-desc-chinese">
@@ -355,15 +483,31 @@
 
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- FAQ -->
+      <div class="download-content box odd-bj">
+        <div class="container">
+          <p class="content-title">我们的愿景</p>
+          <div class="content-desc-chinese">
+            <p>毫无疑问，AIGC应用程序将为全人类的生产和消费方式带来革新。然而，其对既有社会格局及利益分配模式的冲击同样不可忽视。</p>
+            <p>我们认为，技术的革新与相应社会制度的完善同等重要。新制度的建立往往需要时间，但对相关问题的关注和思考应当具有前瞻性。Mist及我们未来的项目均旨在以技术方式进行一种社会实践，探索使相关技术以更加可持续、更加温和的方式融入社会的可能。以Mist为例，我们希望借此契机引发人们关注AI-for-Art应用程序对既有版权制度带来的挑战，对艺术家群体在商业和美学层面的价值的影响，以及本质上，我们如何看待和激励人类的创造力等问题。</p>
+            <p>我们相信，水印工具只是AIGC版权问题解决方案的一环。而AIGC相关技术引发的担忧与变化也不仅仅局限于版权领域。只有以此为起点，开放性地吸引更多技术工作者（尤其是可信AI相关领域的研究者）、人文社科研究者及行业实践者关注AIGC的版权及其他道德、合规及监管方面的问题，在此基础上逐步形成新的行业与社会共识，相关问题才能更好得到解决。</p>
+            <p><br></p>
+            <p>未来，我们希望成为新一代AIGC可信和道德问题的信息中转站。我们热烈欢迎所有对这一愿景感兴趣的开发者、研究者和从业者与我们联系，期待与您共同针对当前技术的瓶颈和尚未解决的潜在社会问题进行探索。</p>
+          <br>  
+          <br>  
+
+
+          </div>
+        </div>
+      </div>
       <div class="download-content box" id="Faq">
         <div class="container">
           <!-- <p class="content-title">FAQ</p><span class="operation"> <i class="up_active"></i> <b>close</b></span></p> -->
           <p class="sub-content-title" , id="sub-content-title-bigger">常见问题解答 <span class="operation"> <i
                 class="up_active"></i> <b>close</b></span></p>
           <div class="content-desc-chinese" id='faq-content'>
-            <div>
+            <!-- <div>
               <b>Q: </b>运行Mist需要多少计算资源？
             </div>
             <div>
@@ -376,24 +520,47 @@
               <b>A: </b>
               我们正为计算资源需求所带来的使用限制积极寻求解决方案。在不久的将来，我们计划将Mist作为一个开源的无服务器在线服务发布，这将使所有用户都能够使用Mist，而不受他们设备性能的限制。我们感谢您的耐心等待，并鼓励您关注相关更新。
             </div>
+            <br> -->
+            <div>
+
+              <b>Q: </b>相较于Mist V1和其他同类产品，Mist V2的主要优势是什么？
+            </div>
+            <div>
+              <b>A: </b>在Mist V1发布后的几个月里，我们在实践中发现了两个问题。第一，LoRA逐渐成为了现在AI绘画学习个人风格的主要方式，但现有水印工具均未能解决这一问题，缺乏防护LoRA的能力；第二，现有水印工具所需计算资源较大，画师的电脑往往不足以满足其要求。相比较现有水印工具而言，Mist V2针对这两个问题实现了重大进步。Mist V2是首个经系统验证对LoRA具有防护能力的图像水印工具；其计算资源消耗也经显著优化，可以在显存为6G的GPU或CPU上运行。</div>
             <br>
+
+            <div>
+
+              <b>Q: </b>Mist V2是如何防护LoRA、SDEdit等AI-for-Art应用程序的？
+            </div>
+            <div>
+              <b>A: </b>Mist V2模仿了LoRA、SDEdit等AI-for-Art应用程序在绘画作品上的训练过程，并针对性地在水印中稳定加入误导性噪声，使AIGC模型混淆绘画作品的真实内容和水印植入的混乱图案的内容。在强度较高时，模型会将混乱图案认为是绘画风格的一部分，从而输出带有混乱图案的图片；在强度较低时，模型也难以通过模型精确学习绘画的风格，降低输出图片和用于训练的绘画作品的风格相似度和输出图片的多样性。</div><br>
+
+            <div>
+
+              <b>Q: </b>Mist V2会被破解吗？
+            </div>
+            <div>
+              <b>A: </b>目前并不存在简单的无损破解工具。任何能对Mist V2起到足够破坏效果的工具都会损害图像本身的质量，从而同样程度地影响绘画风格模仿的输出质量。尽管如此，考虑到技术进步与迭代的速度，我们无法预料新的画风迁移技术和新的模型是否能绕过Mist V2的保护。但我们也将如此次更新一般，长期致力于对Mist进行更新和维护，不断解决新出现的问题。</div><br>
+
             <div>
 
               <b>Q: </b>如果我使用低于推荐强度的攻击来使水印不那么明显，Mist还会起作用吗？
             </div>
-            <div>
+            <!-- <div>
               <b>A: </b>Mist的推荐强度旨在确保在不同的模仿情景下（Stable Diffusion中的textual
               inversion和Dreambooth，NovelAI中的Img2Img等）具有全面的性能。如果用户决定降低水印强度，Mist仍然可以通过相对减弱的性能提供保护。此外，Mist为用户提供了针对不同模仿情况选择不同保护模式的选项，用户可以调整水印强度以更好地满足他们的需求。用户也可以自由调整Mist的强度，并通过验证程序验证不同强度下的保护效果。关于如何选择适当模式的详细指南，请参阅我们的文档。
-            </div>
+            </div> -->
+            <div>
+              <b>A: </b>Mist的推荐强度旨在确保在不同的模仿情景下具有全面的性能。如果用户决定降低水印强度，Mist仍然可以通过相对减弱的性能提供保护。此外，Mist为用户提供了针对不同模仿情况选择不同保护模式的选项，用户可以调整水印强度以更好地满足他们的需求。用户也可以自由调整Mist的强度。关于如何选择适当模式的详细指南，请参阅我们的文档。</div>
             <br>
             <div>
 
-              <b>Q: </b>Mist能完全保护图像不被模仿吗？
+              <b>Q: </b>如何支持Mist和我们的其他与AIGC可信相关的项目？
             </div>
             <div>
-              <b>A: </b> 虽然我们已经在Stable
-              Diffusion、NovelAI和scenario.gg等主流具有模仿功能的AI-for-Art应用程序上针对Mist的性能进行了彻底的测试和验证，但由于AI-for-Art领域的快速发展，现阶段的Mist无法完全防范未来的风险。新发布的AI-for-Art应用程序、新的模仿功能和新的水印净化方法可能带来新的挑战。我们致力于不断完善Mist，并热烈欢迎用户和开发者通过我们的Discord社区反馈和报告问题。加入我们，帮助我们应对技术变革的浪潮！
-            </div>
+              <b>A: </b> Mist系列水印工具将永久免费且开源。作为技术人员，对我们最有力的支持方式之一即为在GitHub上为我们的项目点Star<b>（这对我们真的很重要！）</b>。同样，我们热烈欢迎用户和开发者通过我们的Discord社区或其他联系方式向我们反馈和报告Mist在运行过程中可能存在的问题，帮助我们进一步完善有关技术。
+              <br>我们也非常欢迎您通过社交媒体向我们表达关注、赞美和支持。除发布更多与AIGC可信有关的技术项目外，我们还计划于未来通过自媒体对AIGC的技术原理、商业实践和潜在的社会问题等议题进行介绍与科普，希望通过信息传递促进对AIGC及相关技术的更全面、深入的理解。关注我们，一同应对技术变革的浪潮！</div>
 
           </div>
 
@@ -406,19 +573,36 @@
               <div col-md-6 col-xs-12>
                 我们重视所有用户和开发者的反馈，并热烈欢迎所有对Mist感兴趣的人加入我们的Discord社区。在Discord社区中，用户和开发者们可以分享他们的想法、观点和建议，帮助我们改进Mist的性能及表现。<p>
                 </p>
-                我们的团队将在Discord上解答有关Mist的任何问题。此外，您还可以通过QQ群(162664199) 或者电子邮件与我们联系：mist202304@gmail.com.。
+                我们的团队将在Discord上解答有关Mist的任何问题。<br> 此外，您还可以通过QQ群（189980587） 或者电子邮件与我们联系：mist202304@gmail.com。<br> 您也可以关注我们的微博：@Psyker_，我们会在这里更新最新的资讯。
               </div>
               <div class="col-md-6 col-xs-12">
 
 
-                团队成员
+                <!-- 团队成员
                 （按姓氏首字母排序）
                 <br><br>
                 <P>梁楚盟，即将赴南加州大学攻读计算机博士。</P>
                 <P>吴晓宇，上海交通大学计算机硕士在读。</P>
                 <P>薛伊铭，纽约大学法学硕士在读。</P>
-                <br>
-                <P>加州大学伯克利分校的苏勇文对Mist的开发有重要贡献，我们也感谢吴嘉豪和赵毅在软件开发上给我们的建议。 </P>
+                <P>郑博阳，上海交通大学ACM班本科在读。</P>
+                <P>Alice2O3。</P>
+                <P>MOSS。</P>
+                <br> -->
+                <!-- 团队成员
+                （按姓氏首字母排序）
+                <br><br>
+                <P>Caradryan, 南加州大学博士在读</P>
+                <P>Nicholas0228，上海交通大学计算机硕士在读。</P>
+                <P>Chris Xue，纽约大学法学硕士在读。</P>
+                <P>Boyang zheng，上海交通大学ACM班本科在读。</P>
+                <P>Alice2O3。</P>
+                <P>MOSS。</P> -->
+                团队成员
+                （按姓氏首字母排序）
+                <br><P> 梁楚盟，吴晓宇，薛伊铭，</P>
+                <P>郑博阳，Alice2O3，MOSS星辉。</P>
+                <br> 
+                <P>加州大学伯克利分校的苏勇文对Mist的开发有重要贡献。我们也感谢吴嘉豪和赵毅在软件开发上给我们的建议，以及苹果，GUUUU，原野，蚕蛹子，BASS对我们项目的支持。</P>
               </div>
             </div>
           </div>

@@ -74,7 +74,7 @@
           </div>
           <div>
             <a class="path-item active"
-              href="https://mist-documentation.readthedocs.io/en/latest/content/quickstart.html">See
+              href="https://github.com/mist-project/mist-v2#quick-start">See
               our documentation for quick start</a>
           </div>
         </div>
@@ -86,8 +86,7 @@
       <p class="content-title">What is Mist</p>
       <div class="content-desc">
         Mist is a powerful image preprocessing tool designed for the purpose of protecting the style and content of
-        images from being mimicked by state-of-the-art AI-for-Art applications, including Stable Diffusion, NovelAI,
-        and scenario.gg. By adding watermarks to the images, Mist renders them unrecognizable and inimitable for the
+        images from being mimicked by common AI-for-Art applications, including LoRA, SDEdit, Textual inversion and DreamBooth functions in Stable diffusion, Scenario.gg, etc. By adding watermarks to the images, Mist renders them unrecognizable and inimitable for the
         models employed by AI-for-Art applications. Attempts by AI-for-Art applications to mimic these Misted images
         will be ineffective, and the output image of such mimicry will be scrambled and unusable as artwork.
       </div>
@@ -96,17 +95,24 @@
 
       <!-- 中间箭头内容区 -->
       <div class="c_flex arrow_content">
-        <div class="arrow_item_img">
+        <!-- <div class="arrow_item_img">
           <img src="./image/source/source_vangogh.png" alt="">
+        </div> -->
+        <div class="arrow_item_img">
+          <!-- <img src="./image/source/source_vangogh.png" alt=""> -->
+          <img src="./image/mist_v2/clean.png" alt="">
         </div>
         <div class="arrow-item">
           <p><b>Mist</b></p>
           <p><img class="right_arrow" src="./image/right_arrow.png" alt=""></p>
         </div>
-        <div class="arrow_item_img">
+        <!-- <div class="arrow_item_img">
           <img src="./image/source/mist_vangogh.png" alt="">
+        </div> -->
+        <div class="arrow_item_img">
+          <!-- <img src="./image/source/mist_vangogh.png" alt=""> -->
+          <img src="./image/mist_v2/adv.png" alt="">
         </div>
-
         <div class="arrow-item">
 
           <p> <b>Mimic</b></p>
@@ -114,8 +120,12 @@
           <p><img class="right_arrow" src="./image/right_arrow.png" alt=""></p>
         </div>
 
-        <div class="arrow_item_img">
+        <!-- <div class="arrow_item_img">
           <img src="./image/ti/mist/3.png" alt="">
+        </div> -->
+        <div class="arrow_item_img">
+          <!-- <img src="./image/ti/mist/3.png" alt=""> -->
+          <img src="./image/mist_v2/gen_adv.jpg" alt="">
         </div>
       </div>
       <!--  -->
@@ -131,9 +141,20 @@
       </div>
       <br>
       <br>
-            <div class="content-desc">
-      News: Mist is also accepted <b>by ICML 2023 as Oral Presentation</b>! see our <a
-                  href="https://arxiv.org/abs/2302.04578" target="_blank" title="click to navigate to our paper"> paper</a> for more details. 
+      <div class="content-desc">
+        <b>News & Updates:</b>
+        <br>
+
+      <div class="content-desc">
+        <!-- 2023.12 Mist is also accepted <b>by ICML 2023 as Oral Presentation</b>! see our <a
+            href="https://arxiv.org/abs/2302.04578" target="_blank" title="click to navigate to our paper"> paper</a> for more details.  -->
+            [2023.12]   Mist V2 is officially released as <b>the first</b> image preprocessing tool that has been systematically verified to be <b>effective under LoRA</b>. Furthermore, it significantly enhances its capabilities against various AI-for-Art applications and reduces the computational resource consumption. For more information, you can refer to <a
+            href="https://arxiv.org/abs/2310.04687" target="_blank" title="click to navigate to our paper for Mist V2"> our paper</a>.
+ </div>
+          <div class="content-desc">
+            [2023.04] Mist is also accepted <b>by ICML 2023 as Oral Presentation</b>! See <a
+                href="https://arxiv.org/abs/2302.04578" target="_blank" title="click to navigate to our paper">our paper</a> for more details. 
+    </div>
       </div>
       <br>
       <br>
@@ -143,73 +164,74 @@
       <div class="container">
         <p class="content-title">Advantages & Examples</p>
         <div class="content-desc">
-          Mist is strong against various AI-for-Art applications, as it is robust to noise purification and
-          time-efficient. The examples below demonstrate that Mist provides state-of-the-art protecting watermarks for
-          images, with robustness against various noise purification methods, such as screenshotting, cropping and
-          resizing. Furthermore, the watermarking process takes only several minutes.
-        </div>
+          Mist is effective against a variety of AI-for-Art applications and is highly robust to noise purification, and takes less time and less computational resource to function. The following examples show that Mist provides the most advanced protective watermarking for images that can effectively resist various noise purification methods such as cropping, resizing and super resolution. In addition, the process of adding a watermark to an image by Mist takes only a few minutes.</div>
         <!-- 主内容区 -->
         <div>
           <p class="sub-content-title">Effectiveness <span class="operation"> <i class="up_active"></i>
               <b>close</b></span></p>
           <div class="content-desc">
-            Mist is effective against various AI-for-Art applications, including textual inversion (implemented in <a
+            Mist is effective against various AI-for-Art applications, including LoRA (implemented in <a
+            href="https://huggingface.co/docs/diffusers/training" target="_blank"
+            title="click to navigate to diffuser">Diffusers</a>), SDEdit (implemented in <a
+            href="https://github.com/AUTOMATIC1111/stable-diffusion-webui" target="_blank"
+            title="click to navigate to stable-diffusion-webui">stable-diffusion-webui</a>), textual inversion (implemented in <a
               href="https://github.com/AUTOMATIC1111/stable-diffusion-webui" target="_blank"
-              title="click to navigate to stable-diffusion-webui">stable-diffusion-webui</a>), dreambooth (implemented
+              title="click to navigate to stable-diffusion-webui">stable-diffusion-webui</a>), DreamBooth (implemented
             in <a href="https://huggingface.co/docs/diffusers/training/dreambooth" target="_blank"
-              title="click to navigate to diffuser">diffuser</a>), <a href="https://app.scenario.gg" target="_blank"
-              title="click to navigate to scenario.gg">Scenario.gg</a>, and <a href="https://novelai.net/"
-              target="_blank" title="click to navigate to NovelAI">NovelAI</a>.
-          </div>
+              title="click to navigate to diffuser">Diffusers</a>), <a href="https://app.scenario.gg" target="_blank"
+              title="click to navigate to scenario.gg">Scenario.gg</a>. 
+              <br>
+              Taking the two most typical AI-for-Art applications LoRA and SDEdit as examples, the watermarks added by Mist interfere greatly with the results generated.
+            </div>
           <div class='effect-show'>
-            <p class="effect-content-title">Textual Inversion </p>
+            <p class="effect-content-title">LoRA </p>
             <div class="advantages_row" id="advantages_row_first">
 
               <div>
-                <p><img src="./image/source/source_vangogh.png" alt=""></p>
+                <p><img src="./image/mist_v2/ori_sample.png" alt=""></p>
                 <p>Source image</p>
               </div>
               <div>
-                <p><img src="./image/ti/clean/3.png" alt=""></p>
+                <p><img src="./image/mist_v2/clean_t2i.jpg" alt=""></p>
                 <p>Image generation from <br>source image</p>
               </div>
               <div>
-                <p><img src="./image/source/mist_vangogh.png" alt=""></p>
+                <p><img src="./image/mist_v2/mist_4.png" alt=""></p>
                 <p>Misted image</p>
               </div>
 
               <div>
-                <p><img src="./image/ti/mist/3.png" alt=""></p>
+                <p><img src="./image/mist_v2/misted_t2i.jpg" alt=""></p>
                 <p>Image generation from <br>Misted image</p>
               </div>
             </div>
           </div>
 
           <div class='effect-show'>
-            <p class="effect-content-title">Dreambooth</p>
+            <p class="effect-content-title">SDEdit</p>
             <div class="advantages_row" id="advantages_row_first">
 
               <div>
-                <p><img src="./image/source/source_vangogh.png" alt=""></p>
+                <p><img src="./image/mist_v2/ori_sample_2.png" alt=""></p>
                 <p>Source image</p>
               </div>
               <div>
-                <p><img src="./image/db/clean/10.png" alt=""></p>
+                <p><img src="./image/mist_v2/clean_i2i.jpg" alt=""></p>
                 <p>Image generation from <br>source image</p>
               </div>
               <div>
-                <p><img src="./image/source/mist_vangogh.png" alt=""></p>
+                <p><img src="./image/mist_v2/mist_4_2.png" alt=""></p>
                 <p>Misted image</p>
               </div>
 
               <div>
-                <p><img src="./image/db/mist/5.png" alt=""></p>
+                <p><img src="./image/mist_v2/misted_i2i.jpg" alt=""></p>
                 <p>Image generation from <br>Misted image</p>
               </div>
             </div>
           </div>
 
-          <div class='effect-show'>
+          <!-- <div class='effect-show'>
             <p class="effect-content-title">Scenario.gg </p>
             <div class="advantages_row" id="advantages_row_first">
 
@@ -255,7 +277,7 @@
                 <p>Image generation from <br>Misted image</p>
               </div>
             </div>
-          </div>
+          </div> -->
 
 
         </div>
@@ -267,54 +289,56 @@
           <p class="sub-content-title">Robustness under image transformation <span class="operation"> <i
                 class="up_active"></i> <b>close</b>
               <div class="content-desc">
-                Mist is robust to image transformation. We compare the performance of Gaussian noise, <a
+                Mist is robust to image transformation.  We compare Mist's performance under various defenses such as Gaussian noise, JPEG compression, resizing and super-solution. It is observed that Mist maintains a high level of performance  after input transformation.
+                <!-- Mist is robust to image transformation. We compare the performance of Gaussian noise, <a
                   href="https://glaze.cs.uchicago.edu" target="_blank" title="click to navigate to glaze"> Glaze</a>
                 (with very high intensity and medium render quality) and Mist after cropping and resizing. Mist is the
-                only method remains effective after input transformation.
+                only method remains effective after input transformation. -->
 
               </div>
             </span></p>
           <div class='effect-show'>
-            <p class="effect-content-title">Textual Inversion </p>
+            <p class="effect-content-title">LoRA </p>
             <div class="advantages_row " id="advantages_row_first">
+
               <div>
-                <p><img src="./image/ti/clean/1.png" alt=""></p>
-                <p>Image generation from <br>source image</p>
+                <p><img src="./image/mist_v2/gaussian_t2i.jpg" alt=""></p>
+                <p>Image generation from Misted image  under Gaussian noise</p>
               </div>
               <div>
-                <p><img src="./image/ti/gaussian.png" alt=""></p>
-                <p>Image generation from <br>gaussian-perturbed image</p>
-              </div>
-              <div>
-                <p><img src="./image/ti/glaze-crop/1.png" alt=""></p>
-                <p>Image generation from <br>Glazed image</p>
+                <p><img src="./image/mist_v2/jpeg_t2i.jpg" alt=""></p>
+                <p>Image generation from Misted image under JPEG compression</p>
               </div>
 
               <div>
-                <p><img src="./image//ti/mist-crop/1.png" alt=""></p>
-                <p>Image generation from <br>Misted image</p>
+                <p><img src="./image/mist_v2/resize_t2i.jpg" alt=""></p>
+                <p>Image generation from Misted image under resizing</p>
+              </div>
+              <div>
+                <p><img src="./image/mist_v2/sr_t2i.jpg" alt=""></p>
+                <p>Image generation from Misted image under super resolution</p>
               </div>
             </div>
           </div>
           <div class='effect-show'>
-            <p class="effect-content-title">Dreambooth </p>
+            <p class="effect-content-title">SDEdit </p>
             <div class="advantages_row " id="advantages_row_first">
               <div>
-                <p><img src="./image/db/clean/4.png" alt=""></p>
-                <p>Image generation from <br>source image</p>
+                <p><img src="./image/mist_v2/gaussian_i2i.jpg" alt=""></p>
+                <p>Image generation from Misted image  under Gaussian noise</p>
               </div>
               <div>
-                <p><img src="./image/db/gaussian.png" alt=""></p>
-                <p>Image generation from <br>gaussian-perturbed image</p>
-              </div>
-              <div>
-                <p><img src="./image/db/glaze-crop/0.png" alt=""></p>
-                <p>Image generation from <br>Glazed image</p>
+                <p><img src="./image/mist_v2/jpeg_i2i.jpg" alt=""></p>
+                <p>Image generation from Misted image under JPEG compression</p>
               </div>
 
               <div>
-                <p><img src="./image/db/mist-crop/0.png" alt=""></p>
-                <p>Image generation from <br>Misted image</p>
+                <p><img src="./image/mist_v2/resize_i2i.jpg" alt=""></p>
+                <p>Image generation from Misted image under resizing</p>
+              </div>
+              <div>
+                <p><img src="./image/mist_v2/sr_i2i.jpg" alt=""></p>
+                <p>Image generation from Misted image under super resolution</p>
               </div>
             </div>
           </div>
@@ -327,10 +351,14 @@
           <p class="sub-content-title">Time efficiency <span class="operation"> <i class="up_active"></i>
               <b>close</b></span></p>
           <div class="content-desc">
-            The watermarking process is fast. With the default parameters (100 steps, 512 output size), Mist can process
-            a image within 3 minutes.
+            <!-- The watermarking process is fast. With the default parameters (100 steps, 512 output size), Mist can process
+            a image within 3 minutes. -->
+            Mist supports both CPU and GPU. Adding a Mist watermark to a single image using CPU takes approximately one hour. Using GPU, Mist can run with only 6GB of VRAM and complete the processing of an image in just 5 minutes on average.
           </div>
-          <div class="third_content">
+          <div class="c_center line_cent">
+            <p class="line"></p>
+          </div>
+          <!-- <div class="third_content">
             <div>
               <p><img src="./image/speed.gif" alt=""></p>
               <p>Example: Mist adds watermarks to Monet's painting within 3 minutes. (GPU: RTX A4000)</p>
@@ -338,7 +366,104 @@
             <br>
             <br>
             <br>
+          </div> -->
+        </div>
+        <div>
+          <p class="sub-content-title"> User cases <span class="operation"> <i class="up_active"></i> <b>close</b>
+              <div class="content-desc">
+                The following are showcases of the results when users employ Mist to protect their artworks.
+              </div>
+            </span></p>
+            <div class='effect-show'>
+              <p class="effect-content-title">@桑德兰的等待</p>
+              <div class="advantages_row" id="advantages_row_first">
+                <div>
+                  <p><img src="./image/user2/ori_sample.png" alt=""></p>
+                  <p>Source image</p>
+                </div>
+                <div>
+                  <p><img src="./image/user2/clean_t2i.jpg" alt=""></p>
+                  <p>Image generation from <br>source image</p>
+                </div>
+                <div>
+                  <p><img src="./image/user2/mist_4.png" alt=""></p>
+                  <p>Misted image</p>
+                </div>
+  
+                <div>
+                  <p><img src="./image/user2/misted_t2i.jpg" alt=""></p>
+                  <p>Image generation from <br>Misted image</p>
+                </div>
+              </div>
+              <div class="advantages_row" id="advantages_row_first">
+                <div>
+                  <p><img src="./image/user2_2/ori_sample.png" alt=""></p>
+                  <p>Source image</p>
+                </div>
+                <div>
+                  <p><img src="./image/user2_2/clean_t2i.jpg" alt=""></p>
+                  <p>Image generation from <br>source image</p>
+                </div>
+                <div>
+                  <p><img src="./image/user2_2/mist_4.png" alt=""></p>
+                  <p>Misted image</p>
+                </div>
+  
+                <div>
+                  <p><img src="./image/user2_2/misted_t2i.jpg" alt=""></p>
+                  <p>Image generation from <br>Misted image</p>
+                </div>
+              </div>
+            </div>
+          <div class='effect-show'>
+            <p class="effect-content-title">@Anonymous Artist </p>
+            <div class="advantages_row" id="advantages_row_first">
+              <div>
+                <p><img src="./image/user1/ori_sample.png" alt=""></p>
+                <p>Source image</p>
+              </div>
+              <div>
+                <p><img src="./image/user1/clean_t2i.jpg" alt=""></p>
+                <p>Image generation from <br>source image</p>
+              </div>
+              <div>
+                <p><img src="./image/user1/mist_4.png" alt=""></p>
+                <p>Misted image</p>
+              </div>
+
+              <div>
+                <p><img src="./image/user1/misted_t2i.jpg" alt=""></p>
+                <p>Image generation from <br>Misted image</p>
+              </div>
+
+            </div>
+            <div class="advantages_row" id="advantages_row_first">
+              <div>
+                <p><img src="./image/user1_2/ori_sample.png" alt=""></p>
+                <p>Source image</p>
+              </div>
+              <div>
+                <p><img src="./image/user1_2/clean_t2i.jpg" alt=""></p>
+                <p>Image generation from <br>source image</p>
+              </div>
+              <div>
+                <p><img src="./image/user1_2/mist_4.png" alt=""></p>
+                <p>Misted image</p>
+              </div>
+
+              <div>
+                <p><img src="./image/user1_2/misted_t2i.jpg" alt=""></p>
+                <p>Image generation from <br>Misted image</p>
+              </div>
+
+            </div>
           </div>
+
+          <!-- <div class="c_center line_cent">
+            <p class="line"></p>
+          </div> -->
+          <!-- 主内容区三 -->
+
         </div>
       </div>
       <!-- end -->
@@ -348,21 +473,24 @@
       <div class="container">
         <p class="content-title">Download</p>
         <div class="content-desc">
-          Mist can be downloaded by two approaches. For users, you can download the file from Huggingface. After
+          <!-- Mist can be downloaded by two approaches. For users, you can download the file from Huggingface. After
           unzipping the file, Mist can be launched by clicking the executable file “Mist.” For developers interested in
           exploring the implementation and other technical details of Mist, you may download the source code from GitHub
           and refer to the Readme file for installation instructions. Currently, Mist is compatible with both Windows
-          and Linux operating systems.
+          and Linux operating systems. -->
+          <!-- Mist is compatible with both Linux and Windows operating systems. Users can download Mist through the provided links on Google Drive or Baidu Netdisk(Extraction code: m4nx). For developers interested in setting up Mist using open-source code or exploring other technical details, the source code is available for download on GitHub, along with installation instructions in the Readme file. -->
+
+Mist is compatible with both Linux and Windows operating systems. Windows users can download the Mist launcher from the provided Google Drive or Baidu Netdisk link (Extraction Code: m4nx) and install it for use. For Linux users, we recommend obtaining Mist from our open-source code on GitHub and referring to the Readme file for installation and usage instructions.
         </div>
         <div class="down-operation">
-          <a class="path-item" href="https://huggingface.co/mist-project/mist-linux/tree/main">Linux</a>
-          <a class="path-item" href="https://huggingface.co/mist-project/mist-win/tree/main">Windows</a>
-          <a class="path-item" href="https://github.com/mist-project/mist">Source Code</a>
+          <a class="path-item" href="https://drive.google.com/drive/folders/1vg8oK2BUOla5adaJcFYx5QMq0-MoP8kk?usp=drive_link">Google Drive</a>
+          <a class="path-item" href="https://pan.baidu.com/s/1fZP4nFxlmmr0DiE54DJ7HQ">Baidu Netdisk</a>
+          <a class="path-item" href="https://github.com/mist-project/mist-v2">GitHub</a>
         </div>
       </div>
     </div>
     <!-- Validate -->
-    <div class="download-content box odd-bj">
+    <!-- <div class="download-content box odd-bj">
       <div class="container">
         <p class="content-title">Validate</p>
         <div class="content-desc">
@@ -379,6 +507,18 @@
 
         </div>
       </div>
+    </div> -->
+    <div class="download-content box odd-bj">
+      <div class="container">
+        <p class="content-title">Our vision</p>
+        <div class="content-desc">
+          There is no doubt that the AIGC applications will revolutionize the production and consumption patterns of all mankind. However, its impact on the established social pattern and the distribution of interests should not be overlooked.<br>
+          We recognize that technological innovation is just as important as the improvement of social systems. While it often takes time for new systems to develop, the attention and reflection should be forward-looking. Mist and our future projects aim to engage in a form of social practice in a technical way, exploring the possibilities of integrating relevant technologies into the society in a more sustainable and gentle manner. In the case of Mist, we hope to draw attention to the challenges that AI-for-Art apps pose to the established copyright system, their impact on the commercial and aesthetic value of the artist community, and in essence, how we perceive and incentivize human creativity.<br>
+          We believe that watermark tools are just one piece of the solution to the copyright issues brought by AIGC, and the concerns and changes arising from AIGC-related technologies are not limited to the copyright realm alone. Only by taking this as a starting point, openly attracting more technical developers (especially researchers in the field of trustworthy AI), researchers in humanities and social sciences and industry practitioners to pay attention to the copyright and other ethical, compliance and regulatory issues of AIGC, and gradually forming a new consensus in the industry and the society on the basis of this can the relevant issues be better solved.<p><br></p>
+          In the future, we hope to become an information transit station on the next-generation trustworthy and ethical issues of AIGC. We warmly welcome all developers, researchers and practitioners who are interested in this vision AIGC to contact us, and look forward to exploring the current technological bottlenecks and unresolved potential societal issues together with you.
+          <br><br>
+        </div>
+      </div>
     </div>
     <!-- FAQ -->
     <div class="download-content box" id="Faq">
@@ -388,6 +528,12 @@
               class="up_active"></i> <b>close</b></span></p>
         <div class="content-desc" id='faq-content'>
           <div>
+            <b>Q: </b>Compared to Mist V1 and other similar products, what are the main advantages of Mist V2?
+          </div>
+          <div>
+            <b>A: </b>In the months following the release of Mist V1, we identified two main issues in practice. First, LoRA gradually became the primary method for AI to learn artistic styles, but existing watermark tools were unable to address this problem and lacked the capability to protect against LoRA. Second, existing watermark tools required significant computational resources, often beyond the capacity of artists’ computers. In comparison to existing watermark tools, Mist V2 has made significant advancements in addressing these two issues. Mist V2 is the first watermark tool systematically verified to have protective functions against LoRA. Besides, the computational resource consumption required by Mist is also significantly optimized, allowing it to run on GPUs and CPUs with a minimum of 6GB of VRAM.
+          </div><br>
+          <!-- <div>
             <b>Q: </b>What is the computing resource requirement to run Mist?
           </div>
           <div>
@@ -405,35 +551,41 @@
             will allow all users to use Mist regardless of their device’s capabilities. We appreciate your patience and
             encourage you to stay tuned for updates on this exciting development.
           </div>
-          <br>
+          <br> -->
 
           <div>
-            <b>Q: </b>If I use an attack with a strength lower than recommended to make the watermark less obvious,
-            would Mist still work?
+            <b>Q: </b>How does Mist V2 protect against AI-for-Art applications like LoRA and SDEdit?
           </div>
           <div>
-            <b>A: </b> Indeed, the recommended strength for Mist is designed to ensure optimal and comprehensive
-            performance under different mimicry cases (textual inversion and Dreambooth in Stable Diffusion, Img2Img in
-            NovelAI, etc.) If the user decides to reduce the watermark strength, Mist can still provide protection with
-            relatively moderate performance. Additionally, Mist provides users with the option to choose from different
-            modes that specifically target different mimicry cases, allowing users to adjust the watermark strength to
-            better suit their needs. Detailed instructions on how to select the appropriate mode are provided in our
-            documentation.
+            <b>A: </b> Mist V2 mimics the training process of AI-for-Art applications such as LoRA and SDEdit on artistic works. It strategically introduces misleading noise into the watermark to confuse AIGC models between the actual content of the artwork and the chaotic patterns embedded in the watermark. At higher intensities, the model may perceive the chaotic patterns as part of the artistic style, resulting in images with the chaotic patterns. At lower intensities, the model struggles to accurately learn the artistic style, reducing the similarity between the output images and the artworks used for training and the diversity of the output images.
 
           </div>
           <br>
+
+
+          
           <div>
-            <b>Q: </b>Can Mist completely protect the image from being mimicked?
+            <b>Q: </b>Will Mist V2 be bypassed?
           </div>
           <div>
-            <b>A: </b> While we have thoroughly tested and validated Mist’s performance against Stable Diffusion,
-            NovelAI, and scenario.gg, which currently represent the mainstream AI-for-Art applications with mimicry
-            function, it is important to note that the effectiveness of Mist is not immune to future risks due to rapid
-            development in this field. New challenges may arise from newly released AI-for-Art applications, novel
-            mimicry functions, and new methods of watermark purification. We are committed to continuously improving
-            Mist and warmly welcome user feedback and bug reports through our Discord community, which is open to both
-            developers and users. Join us and help us stay ahead of the curve!
+            <b>A: </b>Currently, there are no simple, lossless bypassing tools available. Any tool that significant undermines the protective effect of Mist V2 would also compromise the quality of images, thereby equally affecting the output quality of artistic style imitation. Nevertheless, considering the rapid pace of technological advancements and iterations, we cannot predict whether new artistic style imitation techniques and models might bypass the protection of Mist V2. However, similar to this update, we are committed to continuously updating and maintaining Mist, addressing newly emerging issues over the long term.
           </div>
+          <br>
+          <div>
+            <b>Q: </b>If I use an attack with intensity lower than the recommended level to make the watermark less noticeable, will Mist still be effective?
+          </div>
+          <div>
+            <b>A: </b> The recommended intensity of Mist is designed to ensure comprehensive performance in various imitation scenarios. If a user decides to decrease the watermark intensity, Mist can still provide protection through a relatively diminished performance. Additionally, Mist allows users to choose different protection modes for various imitation situations, allowing them to adjust the watermark intensity to better suit their needs. Users also have the flexibility to customize Mist’s intensity. For a detailed guide on selecting the appropriate mode, please refer to our documentation.
+          </div>
+          <br>
+          <div>
+            <b>Q: </b>How does Mist V2 protect against AI-for-Art applications like LoRA and SDEdit?
+          </div>
+          <div>
+            <b>A: </b> The Mist series watermark tools will permanently be free and open-source. As technical developers, one of the most impactful ways to support us is by starring our projects on GitHub <b>(it’s really important to us!)</b>. Likewise, we warmly welcome users and developers to provide feedback and report any issues with Mist through our Discord community or other contact methods, helping us further refine the technology.<br>
+            We also greatly appreciate your expression of interest, praise, and support through social media. In addition to releasing more AIGC-related technical projects, we plan to introduce and inform the public about the technical principles, business practices, and potential societal issues related to AIGC through social media in the future. We hope to promote a more comprehensive and in-depth understanding of AIGC and related technologies through sharing. Follow us to ride the wave of technological change together!
+          </div>
+
         </div>
 
       </div>
@@ -449,9 +601,8 @@
 
 
 
-
-              Our team is always available on Discord to answer any problems about Mist. Furthermore, you can contact us
-              via QQ group chat:162664199 or via email: mist202304@gmail.com.
+              Our team is always available on Discord to answer any problems about Mist.<br>  Furthermore, you can contact us
+              via QQ group chat:189980587 or via email: mist202304@gmail.com. <br> You can also follow us on our Weibo account: @Psyker_. We will provide the latest updates there.
             </div>
             <div>
 
@@ -459,13 +610,9 @@
               Our group:
 
               <P>(Alphabetical order by last name)</P>
-
-              <br>
-              <P>Caradryan. Prospect Ph.D. student in CS, USC.</P>
-              <P>Xiaoyu Wu. First-year Master's student in CS, Shanghai Jiao Tong University.</P>
-              <P>Yiming (Chris) Xue. L.L.M. candidate, NYU.</P>
-              <br>
-              <P>Yongwen Su at UCB contributes to the development of Mist. We also thanks Jiahao Wu and Yi (David) Zhao  for their advice in software development.  </P>
+              <P> Caradryan Liang, Nicholas Wu, Chris Xue, Boyang Zheng, Alice2O3, MOSS星辉.</P>
+              <br> 
+              <P>Yongwen Su at UCB contributes to the development of Mist. We also thanks Jiahao Wu and Yi (David) Zhao  for their advice in software development. We would also like to express our gratitude to Jiahao Wu and Yi Zhao for their valuable suggestions in software development, as well as to 苹果, GUUUU, 原野, 蚕蛹子 and BASS for their support of our project.  </P>
             </div>
           </div>
         </div>
