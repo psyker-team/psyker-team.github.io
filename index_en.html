@@ -146,10 +146,7 @@
         <br>
 
       <div class="content-desc">
-        <!-- 2023.12 Mist is also accepted <b>by ICML 2023 as Oral Presentation</b>! see our <a
-            href="https://arxiv.org/abs/2302.04578" target="_blank" title="click to navigate to our paper"> paper</a> for more details.  -->
-            [2023.12]   Mist V2 is officially released as <b>the first</b> image preprocessing tool that has been systematically verified to be <b>effective under LoRA</b>. Furthermore, it significantly enhances its capabilities against various AI-for-Art applications and reduces the computational resource consumption. For more information, you can refer to <a
-            href="https://arxiv.org/abs/2310.04687" target="_blank" title="click to navigate to our paper for Mist V2"> our paper</a>.
+            [2023.12]   Mist V2 is officially released as <b>the first</b> image preprocessing tool that has been systematically verified to be <b>effective under LoRA</b>. Furthermore, it significantly enhances its capabilities against various AI-for-Art applications and reduces the computational resource consumption. 
  </div>
           <div class="content-desc">
             [2023.04] Mist is also accepted <b>by ICML 2023 as Oral Presentation</b>! See <a
@@ -229,54 +226,7 @@
             </div>
           </div>
 
-          <!-- <div class='effect-show'>
-            <p class="effect-content-title">Scenario.gg </p>
-            <div class="advantages_row" id="advantages_row_first">
-
-              <div>
-                <p><img src="./image/source/source_vangogh.png" alt=""></p>
-                <p>Source image</p>
-              </div>
-              <div>
-                <p><img src="./image/scenario/clean/3.png" alt=""></p>
-                <p>Image generation from <br>source image</p>
-              </div>
-              <div>
-                <p><img src="./image/source/mist_vangogh.png" alt=""></p>
-                <p>Misted image</p>
-              </div>
-
-              <div>
-                <p><img src="./image/scenario/mist/3.png" alt=""></p>
-                <p>Image generation from <br>Misted image</p>
-              </div>
-            </div>
-          </div>
-
-          <div class='effect-show'>
-            <p class="effect-content-title">NovelAI image2image </p>
-            <div class="advantages_row" id="advantages_row_first">
-
-              <div>
-                <p><img src="./image/source/sample_512.png" alt=""></p>
-                <p>Source image</p>
-              </div>
-              <div>
-                <p><img src="./image/novelai/clean/0.5_0.2.png" alt=""></p>
-                <p>Image generation from <br>source image</p>
-              </div>
-              <div>
-                <p><img src="./image/source/misted_sample_16_100_512_1_2_1.png" alt=""></p>
-                <p>Misted image</p>
-              </div>
-
-              <div>
-                <p><img src="./image/novelai/mist/0.5_0.2.png" alt=""></p>
-                <p>Image generation from <br>Misted image</p>
-              </div>
-            </div>
-          </div> -->
-
+      
 
         </div>
         <div class="c_center line_cent">
@@ -471,15 +421,10 @@
       <div class="container">
         <p class="content-title">Download</p>
         <div class="content-desc">
-          <!-- Mist can be downloaded by two approaches. For users, you can download the file from Huggingface. After
-          unzipping the file, Mist can be launched by clicking the executable file “Mist.” For developers interested in
-          exploring the implementation and other technical details of Mist, you may download the source code from GitHub
-          and refer to the Readme file for installation instructions. Currently, Mist is compatible with both Windows
-          and Linux operating systems. -->
-          <!-- Mist is compatible with both Linux and Windows operating systems. Users can download Mist through the provided links on Google Drive or Baidu Netdisk(Extraction code: m4nx). For developers interested in setting up Mist using open-source code or exploring other technical details, the source code is available for download on GitHub, along with installation instructions in the Readme file. -->
-
-Mist is compatible with both Linux and Windows operating systems. Windows users can download the Mist launcher from the provided Google Drive or Baidu Netdisk link (Extraction Code: m4nx) and install it for use. For Linux users, we recommend obtaining Mist from our open-source code on GitHub and referring to the Readme file for installation and usage instructions.
-        </div>
+Mist is compatible with both Linux and Windows operating systems. For local deployment, users can refer to our <a
+href="https://github.com/mist-project/mist-v2/blob/main/docs/Handbook-Free-version.md" target="_blank" title="click to quick start">guidance </a> for quick start.  Windows users can download the Mist launcher from the provided Google Drive or Baidu Netdisk link (Extraction Code: m4nx) and install it for use. For Linux users, we recommend obtaining Mist from our open-source code on GitHub and referring to the Readme file for installation and usage instructions. 
+Additionally, a <a
+                href="https://colab.research.google.com/drive/1k5tLNsWTTAkOlkl5d9llf93bJ6csvMuZ?usp=sharing" target="_blank" title="click to navigate to notebook">Colab Notebook </a> is available for users with MacOS systems or those who do not possess proper Nvidia GPUs.       </div>
         <div class="down-operation">
           <a class="path-item" href="https://drive.google.com/drive/folders/1vg8oK2BUOla5adaJcFYx5QMq0-MoP8kk?usp=drive_link">Google Drive</a>
           <a class="path-item" href="https://pan.baidu.com/s/1fZP4nFxlmmr0DiE54DJ7HQ">Baidu Netdisk</a>
@@ -531,25 +476,6 @@ Mist is compatible with both Linux and Windows operating systems. Windows users 
           <div>
             <b>A: </b>In the months following the release of Mist V1, we identified two main issues in practice. First, LoRA gradually became the primary method for AI to learn artistic styles, but existing watermark tools were unable to address this problem and lacked the capability to protect against LoRA. Second, existing watermark tools required significant computational resources, often beyond the capacity of artists’ computers. In comparison to existing watermark tools, Mist V2 has made significant advancements in addressing these two issues. Mist V2 is the first watermark tool systematically verified to have protective functions against LoRA. Besides, the computational resource consumption required by Mist is also significantly optimized, allowing it to run on GPUs and CPUs with a minimum of 6GB of VRAM.
           </div><br>
-          <!-- <div>
-            <b>Q: </b>What is the computing resource requirement to run Mist?
-          </div>
-          <div>
-            <b>A: </b>We provide a table in our documentation that outlines the device requirement for running Mist.
-            Additionally, for users with limited computing resources, we strongly recommend using Mist’s low VRAM mode,
-            which will significantly reduce the computing resource requirement.
-          </div><br>
-
-          <div>
-            <b>Q: </b>What should I do if my device cannot run Mist even under the low VRAM mode?
-          </div>
-          <div>
-            <b>A: </b> We are aware of the access limitation due to device requirements and are actively working on a
-            solution. In the near future, we plan to release Mist as an open-source serverless online service, which
-            will allow all users to use Mist regardless of their device’s capabilities. We appreciate your patience and
-            encourage you to stay tuned for updates on this exciting development.
-          </div>
-          <br> -->
 
           <div>
             <b>Q: </b>How does Mist V2 protect against AI-for-Art applications like LoRA and SDEdit?
@@ -583,7 +509,6 @@ Mist is compatible with both Linux and Windows operating systems. Windows users 
             <b>A: </b> The Mist series watermark tools will permanently be free and open-source. As technical developers, one of the most impactful ways to support us is by starring our projects on GitHub <b>(it's really important to us!)</b>. Likewise, we warmly welcome users and developers to provide feedback and report any issues with Mist through our Discord community or other contact methods, helping us further refine the technology.<br>
             We also greatly appreciate your expression of interest, praise, and support through social media. In addition to releasing more AIGC-related technical projects, we plan to introduce and inform the public about the technical principles, business practices, and potential societal issues related to AIGC through social media in the future. We hope to promote a more comprehensive and in-depth understanding of AIGC and related technologies through sharing. Follow us to ride the wave of technological change together!
           </div>
-
         </div>
 
       </div>
